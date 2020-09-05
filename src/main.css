@@ -69,10 +69,10 @@ body {
 
 /* #region navigation  */
 
-#navbar {
+#navBar {
+  width: 100vw;
   position: fixed;
   top: 0;
-  width: 100%;
   display: block;
   background: rgb(245, 245, 245);
   background: -moz-linear-gradient(
@@ -102,36 +102,35 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-#navbar > ul {
+#navBar > ul {
   display: block;
   padding-bottom: 0.5rem;
   /* display: flex; */
 }
 
-.menuItem {
+.navBarItem {
   height: 100%;
   padding: 0.25rem 1rem 0.25rem 0.5rem;
   transition: background-color 0.2s;
   font-weight: bold;
-  
 }
 
-.menuItem:hover {
+.navBarItem:hover {
   background-color: rgb(174, 207, 212);
   cursor: pointer;
 }
 
 @media only screen and (min-width: 461px) {
-  #navbar {
+  #navBar {
     display: flex;
     align-items: baseline;
   }
-  #navbar > ul {
+  #navBar > ul {
     display: flex;
     padding-bottom: 0;
   }
 
-  .menuItem {
+  .navBarItem {
     padding: 1rem;
   }
 }
@@ -147,13 +146,14 @@ h1 {
 }
 
 .articleTitle {
-  padding: 0 1rem 0 0;
+  padding: 0 0.5rem 0 0;
   display: inline;
 }
 
 article {
+  width: 80vw;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   color: whitesmoke;
   text-align: justify;
   line-height: 1.5rem;
